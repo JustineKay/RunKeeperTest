@@ -6,9 +6,9 @@
 //  Copyright © 2015 Justine Kay. All rights reserved.
 //
 
-#import "MKCustomMapOverlay.h"
+#import "MKCustomMapOverlayRenderer.h"
 
-@implementation MKCustomMapOverlay
+@implementation MKCustomMapOverlayRenderer
 
 - (instancetype)initWithOverlay:(id <MKOverlay>)overlay {
     self = [super initWithOverlay:overlay];

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface MKCustomMapOverlay : MKOverlayRenderer
+@interface MKCustomMapOverlayRenderer : MKOverlayRenderer
 
 /**
  *  Color for the overlay. Default color is 'white'

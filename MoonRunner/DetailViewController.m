@@ -13,7 +13,11 @@
 #import "Location.h"
 #import "MulticolorPolylineSegment.h"
 #import "MKMapDimOverlay.h"
-#import "MKCustomMapOverlay.h"
+#import "MKCustomMapOverlayRenderer.h"
+#import "MKCustomOverlayPathRenderer.h"
+#import "MKCustomOverlayPathView.h"
+#import "ASPolylineView.h"
+#import "ASPolylineRenderer.h"
 
 @interface DetailViewController () <MKMapViewDelegate>
 
@@ -68,22 +72,35 @@
     if ([overlay isKindOfClass:[MKPolyline class]]) {
         
         //MKPolyline *polyLine = (MKPolyline *)overlay; //Replace wih below
+        
         MulticolorPolylineSegment *polyLine = (MulticolorPolylineSegment *)overlay;
         
         MKPolylineRenderer *aRenderer = [[MKPolylineRenderer alloc] initWithPolyline:polyLine];
         
-        //aRenderer.strokeColor = [UIColor blackColor]; //Replace with below
-        aRenderer.strokeColor = polyLine.color;
+        ASPolylineRenderer *maskedPolyline = [[ASPolylineRenderer alloc] initWithPolyline:polyLine];
         
+        //aRenderer.strokeColor = [UIColor blackColor]; //Replace with below
+        
+        aRenderer.strokeColor = polyLine.color;
         aRenderer.lineWidth = 12;
         
         return aRenderer;
+    
     } else if([overlay isMemberOfClass:[MKMapDimOverlay class]]) {
         
-        MKCustomMapOverlay *dimOverlayView = [[MKCustomMapOverlay alloc] initWithOverlay:overlay];
+        MKCustomMapOverlayRenderer *dimOverlayView = [[MKCustomMapOverlayRenderer alloc] initWithOverlay:overlay];
+        
         dimOverlayView.overlayAlpha = 0.85;
+        
         return dimOverlayView;
     }
+    
+//    }else if ([overlay isMemberOfClass:[MKPolyline class]]) {
+//        
+//        MKCustomOverlayPathRenderer *userPathView = [[MKCustomOverlayPathRenderer alloc] initWithOverlay:overlay];
+//        
+//        return userPathView;
+//    }
     
     return nil;
 }
@@ -100,6 +117,23 @@
     return [MKPolyline polylineWithCoordinates:coords count:self.run.locations.count];
 }
 
+//- (MKOverlayView *)userPath {
+//    
+//    CLLocationCoordinate2D coords[self.run.locations.count];
+//    
+//    NSMutableArray *mapPoints;
+//    
+//    for (int i = 0; i < self.run.locations.count; i++) {
+//        Location *location = [self.run.locations objectAtIndex:i];
+//        coords[i] = CLLocationCoordinate2DMake(location.latitude.doubleValue, location.longitude.doubleValue);
+//        
+//        //MKMapPointForCoordinate(coords[i]);
+//    }
+//    [MKPolyline polylineWithCoordinates:coords count:self.run.locations.count];
+//    return userPath;
+//}
+
+
 - (void)loadMap
 {
     if (self.run.locations.count > 0) {
@@ -109,13 +143,18 @@
         // set the map bounds
         [self.mapView setRegion:[self mapRegion]];
         
+        
         // make the line(s!) on the map
-        //[self.mapView addOverlay:[self polyLine]];
+        
         NSArray *colorSegmentArray = [MathController colorSegmentsForLocations:self.run.locations.array];
         [self.mapView addOverlays:colorSegmentArray];
         
         MKMapDimOverlay *dimOverlay = [[MKMapDimOverlay alloc] initWithMapView:self.mapView];
         [self.mapView addOverlay: dimOverlay];
+        
+       
+        
+        //[self.mapView addOverlay:[self polyLine]];
         
     } else {
         

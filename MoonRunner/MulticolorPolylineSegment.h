@@ -2,7 +2,7 @@
 //  MulticolorPolylineSegment.h
 //  MoonRunner
 //
-//  Created by Justine Gartner on 11/6/15.
+//  Created by Justine Kay on 11/6/15.
 //  Copyright © 2015 Justine Kay. All rights reserved.
 //
 
