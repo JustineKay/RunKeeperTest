@@ -1,14 +1,14 @@
 //
-//  UserPathPolylineOverlay.m
+//  ClearPathPolylineOverlay.m
 //  MoonRunner
 //
-//  Created by Justine Gartner on 11/9/15.
+//  Created by Justine Kay 🙏🏼 on 11/9/15.
 //  Copyright © 2015 Justine Kay. All rights reserved.
 //
 
-#import "UserPathPolylineOverlay.h"
+#import "ClearPathPolylineOverlay.h"
 
-@implementation UserPathPolylineOverlay
+@implementation ClearPathPolylineOverlay
 
 @synthesize polyline;
 

@@ -28,9 +28,9 @@
 #import <MapKit/MapKit.h>
 
 /**
-  MKOverlay object for adding a dim overlay to the entire map view
+  MKOverlay object for adding a full overlay to the entire map view
  */
-@interface MKMapDimOverlay : NSObject<MKOverlay>
+@interface MKMapFullCoverageOverlay : NSObject<MKOverlay>
 
 -(id)initWithMapView:(MKMapView *)mapView;
 

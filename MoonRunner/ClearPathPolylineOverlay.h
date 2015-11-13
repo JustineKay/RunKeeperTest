@@ -1,21 +1,21 @@
 //
-//  UserPathPolylineOverlay.h
+//  ClearPathPolylineOverlay.h
 //  MoonRunner
 //
-//  Created by Justine Gartner on 11/9/15.
+//  Created by Justine Kay 🙏🏼 on 11/9/15.
 //  Copyright © 2015 Justine Kay. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface UserPathPolylineOverlay : NSObject <MKOverlay> {
+@interface ClearPathPolylineOverlay : NSObject <MKOverlay> {
     
     MKPolyline *polyline;
 }
 
 @property (nonatomic, retain) MKPolyline* polyline;
 
-+ (UserPathPolylineOverlay *)initWithPolyline: (MKPolyline*) line;
++ (ClearPathPolylineOverlay *)initWithPolyline: (MKPolyline*) line;
 
 @end

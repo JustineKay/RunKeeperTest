@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B9B79061BF4F0AC004A7756 /* ClearOverlayPathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9B79051BF4F0AC004A7756 /* ClearOverlayPathRenderer.m */; };
 		6BA3AB791BED71B900A9B749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3AB781BED71B900A9B749 /* main.m */; };
 		6BA3AB7C1BED71B900A9B749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3AB7B1BED71B900A9B749 /* AppDelegate.m */; };
 		6BA3AB7F1BED71B900A9B749 /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3AB7D1BED71B900A9B749 /* MoonRunner.xcdatamodeld */; };
@@ -27,16 +28,13 @@
 		6BA3ABAF1BED7BBC00A9B749 /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABAE1BED7BBC00A9B749 /* NewRunViewController.m */; };
 		6BA3ABB51BED80A900A9B749 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABB41BED80A900A9B749 /* MathController.m */; };
 		6BA3ABB81BED870F00A9B749 /* MulticolorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABB71BED870F00A9B749 /* MulticolorPolylineSegment.m */; };
-		6BA3ABE31BEFEE1F00A9B749 /* MKMapDimOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABE01BEFEE1F00A9B749 /* MKMapDimOverlay.m */; };
-		6BA3ABE71BEFF19800A9B749 /* MKCustomMapOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABE61BEFF19800A9B749 /* MKCustomMapOverlayRenderer.m */; };
-		6BC51AB71BF1866C00C0F884 /* MKCustomOverlayPathRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC51AB61BF1866C00C0F884 /* MKCustomOverlayPathRenderer.m */; };
-		6BC51ABA1BF1900F00C0F884 /* UserPathPolylineOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC51AB91BF1900F00C0F884 /* UserPathPolylineOverlay.m */; };
-		6BC51ABD1BF192F600C0F884 /* UserPathCustomPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC51ABC1BF192F600C0F884 /* UserPathCustomPolyline.m */; };
-		6BC51AC21BF1AF7900C0F884 /* ASPolylineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC51ABF1BF1AF7900C0F884 /* ASPolylineRenderer.m */; };
-		6BC51AC31BF1AF7900C0F884 /* ASPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC51AC11BF1AF7900C0F884 /* ASPolylineView.m */; };
+		6BA3ABE31BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABE01BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.m */; };
+		6BA3ABE71BEFF19800A9B749 /* MKMapGrayOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3ABE61BEFF19800A9B749 /* MKMapGrayOverlayRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B9B79041BF4F0AC004A7756 /* ClearOverlayPathRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearOverlayPathRenderer.h; sourceTree = "<group>"; };
+		6B9B79051BF4F0AC004A7756 /* ClearOverlayPathRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearOverlayPathRenderer.m; sourceTree = "<group>"; };
 		6BA3AB741BED71B900A9B749 /* MoonRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA3AB781BED71B900A9B749 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BA3AB7A1BED71B900A9B749 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,20 +67,10 @@
 		6BA3ABB41BED80A900A9B749 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
 		6BA3ABB61BED870F00A9B749 /* MulticolorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticolorPolylineSegment.h; sourceTree = "<group>"; };
 		6BA3ABB71BED870F00A9B749 /* MulticolorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticolorPolylineSegment.m; sourceTree = "<group>"; };
-		6BA3ABDF1BEFEE1F00A9B749 /* MKMapDimOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapDimOverlay.h; sourceTree = "<group>"; };
-		6BA3ABE01BEFEE1F00A9B749 /* MKMapDimOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapDimOverlay.m; sourceTree = "<group>"; };
-		6BA3ABE51BEFF19800A9B749 /* MKCustomMapOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCustomMapOverlayRenderer.h; sourceTree = "<group>"; };
-		6BA3ABE61BEFF19800A9B749 /* MKCustomMapOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCustomMapOverlayRenderer.m; sourceTree = "<group>"; };
-		6BC51AB51BF1866C00C0F884 /* MKCustomOverlayPathRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCustomOverlayPathRenderer.h; sourceTree = "<group>"; };
-		6BC51AB61BF1866C00C0F884 /* MKCustomOverlayPathRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCustomOverlayPathRenderer.m; sourceTree = "<group>"; };
-		6BC51AB81BF1900F00C0F884 /* UserPathPolylineOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPathPolylineOverlay.h; sourceTree = "<group>"; };
-		6BC51AB91BF1900F00C0F884 /* UserPathPolylineOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPathPolylineOverlay.m; sourceTree = "<group>"; };
-		6BC51ABB1BF192F600C0F884 /* UserPathCustomPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPathCustomPolyline.h; sourceTree = "<group>"; };
-		6BC51ABC1BF192F600C0F884 /* UserPathCustomPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPathCustomPolyline.m; sourceTree = "<group>"; };
-		6BC51ABE1BF1AF7900C0F884 /* ASPolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPolylineRenderer.h; sourceTree = "<group>"; };
-		6BC51ABF1BF1AF7900C0F884 /* ASPolylineRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPolylineRenderer.m; sourceTree = "<group>"; };
-		6BC51AC01BF1AF7900C0F884 /* ASPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPolylineView.h; sourceTree = "<group>"; };
-		6BC51AC11BF1AF7900C0F884 /* ASPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPolylineView.m; sourceTree = "<group>"; };
+		6BA3ABDF1BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapFullCoverageOverlay.h; sourceTree = "<group>"; };
+		6BA3ABE01BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapFullCoverageOverlay.m; sourceTree = "<group>"; };
+		6BA3ABE51BEFF19800A9B749 /* MKMapGrayOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapGrayOverlayRenderer.h; sourceTree = "<group>"; };
+		6BA3ABE61BEFF19800A9B749 /* MKMapGrayOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapGrayOverlayRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,20 +115,12 @@
 			children = (
 				6BA3AB7A1BED71B900A9B749 /* AppDelegate.h */,
 				6BA3AB7B1BED71B900A9B749 /* AppDelegate.m */,
-				6BC51ABE1BF1AF7900C0F884 /* ASPolylineRenderer.h */,
-				6BC51ABF1BF1AF7900C0F884 /* ASPolylineRenderer.m */,
-				6BC51AC01BF1AF7900C0F884 /* ASPolylineView.h */,
-				6BC51AC11BF1AF7900C0F884 /* ASPolylineView.m */,
-				6BC51AB51BF1866C00C0F884 /* MKCustomOverlayPathRenderer.h */,
-				6BC51AB61BF1866C00C0F884 /* MKCustomOverlayPathRenderer.m */,
-				6BC51ABB1BF192F600C0F884 /* UserPathCustomPolyline.h */,
-				6BC51ABC1BF192F600C0F884 /* UserPathCustomPolyline.m */,
-				6BC51AB81BF1900F00C0F884 /* UserPathPolylineOverlay.h */,
-				6BC51AB91BF1900F00C0F884 /* UserPathPolylineOverlay.m */,
-				6BA3ABE51BEFF19800A9B749 /* MKCustomMapOverlayRenderer.h */,
-				6BA3ABE61BEFF19800A9B749 /* MKCustomMapOverlayRenderer.m */,
-				6BA3ABDF1BEFEE1F00A9B749 /* MKMapDimOverlay.h */,
-				6BA3ABE01BEFEE1F00A9B749 /* MKMapDimOverlay.m */,
+				6B9B79041BF4F0AC004A7756 /* ClearOverlayPathRenderer.h */,
+				6B9B79051BF4F0AC004A7756 /* ClearOverlayPathRenderer.m */,
+				6BA3ABE51BEFF19800A9B749 /* MKMapGrayOverlayRenderer.h */,
+				6BA3ABE61BEFF19800A9B749 /* MKMapGrayOverlayRenderer.m */,
+				6BA3ABDF1BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.h */,
+				6BA3ABE01BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.m */,
 				6BA3AB941BED72E200A9B749 /* Location+CoreDataProperties.h */,
 				6BA3AB951BED72E200A9B749 /* Location+CoreDataProperties.m */,
 				6BA3AB961BED72E200A9B749 /* Location.h */,
@@ -254,14 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA3AB9F1BED72E200A9B749 /* Run.m in Sources */,
-				6BC51AB71BF1866C00C0F884 /* MKCustomOverlayPathRenderer.m in Sources */,
+				6B9B79061BF4F0AC004A7756 /* ClearOverlayPathRenderer.m in Sources */,
 				6BA3AB9C1BED72E200A9B749 /* Location+CoreDataProperties.m in Sources */,
 				6BA3AB9D1BED72E200A9B749 /* Location.m in Sources */,
 				6BA3ABB81BED870F00A9B749 /* MulticolorPolylineSegment.m in Sources */,
-				6BA3ABE71BEFF19800A9B749 /* MKCustomMapOverlayRenderer.m in Sources */,
-				6BC51AC21BF1AF7900C0F884 /* ASPolylineRenderer.m in Sources */,
-				6BC51AC31BF1AF7900C0F884 /* ASPolylineView.m in Sources */,
-				6BC51ABD1BF192F600C0F884 /* UserPathCustomPolyline.m in Sources */,
+				6BA3ABE71BEFF19800A9B749 /* MKMapGrayOverlayRenderer.m in Sources */,
 				6BA3AB851BED71B900A9B749 /* DetailViewController.m in Sources */,
 				6BA3AB9E1BED72E200A9B749 /* Run+CoreDataProperties.m in Sources */,
 				6BA3ABAC1BED7B0D00A9B749 /* HomeViewController.m in Sources */,
@@ -270,8 +247,7 @@
 				6BA3ABB51BED80A900A9B749 /* MathController.m in Sources */,
 				6BA3AB7F1BED71B900A9B749 /* MoonRunner.xcdatamodeld in Sources */,
 				6BA3AB791BED71B900A9B749 /* main.m in Sources */,
-				6BC51ABA1BF1900F00C0F884 /* UserPathPolylineOverlay.m in Sources */,
-				6BA3ABE31BEFEE1F00A9B749 /* MKMapDimOverlay.m in Sources */,
+				6BA3ABE31BEFEE1F00A9B749 /* MKMapFullCoverageOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

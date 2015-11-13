@@ -1,20 +1,20 @@
 //
-//  MKCustomMapOverlay.m
+//  MKMapGrayOverlayRenderer.m
 //  MoonRunner
 //
-//  Created by Justine Gartner on 11/8/15.
+//  Created by Justine Kay 🙏🏼 on 11/8/15.
 //  Copyright © 2015 Justine Kay. All rights reserved.
 //
 
-#import "MKCustomMapOverlayRenderer.h"
+#import "MKMapGrayOverlayRenderer.h"
 
-@implementation MKCustomMapOverlayRenderer
+@implementation MKMapGrayOverlayRenderer
 
 - (instancetype)initWithOverlay:(id <MKOverlay>)overlay {
     self = [super initWithOverlay:overlay];
     if (self != nil) {
         self.overlayAlpha = 0.2;
-        self.overlayColor = [UIColor whiteColor];
+        self.overlayColor = [UIColor grayColor];
     }
     return self;
 }

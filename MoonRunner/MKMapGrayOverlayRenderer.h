@@ -1,15 +1,15 @@
 //
-//  MKCustomMapOverlay.h
+//  MKMapGrayOverlayRenderer.h
 //  MoonRunner
 //
-//  Created by Justine Gartner on 11/8/15.
+//  Created by Justine Kay 🙏🏼 on 11/8/15.
 //  Copyright © 2015 Justine Kay. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@interface MKCustomMapOverlayRenderer : MKOverlayRenderer
+@interface MKMapGrayOverlayRenderer : MKOverlayRenderer
 
 /**
  *  Color for the overlay. Default color is 'white'
